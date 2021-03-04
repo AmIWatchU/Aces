@@ -8,22 +8,70 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Canvas Style="{DynamicResource Background}">
-        <Grid Style="{DynamicResource Card}" Canvas.Top="294" Canvas.Left="293">
-            <Grid Margin="14,35,10,21">
+        <Rectangle Style="{DynamicResource Card}" Grid.ColumnSpan="2" Canvas.Top="97">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Res/Back.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
 
 
-                <Polygon Style="{DynamicResource Spades}" Margin="12,37,10,-7"  />
-                <Ellipse Style="{DynamicResource Black}" Margin="0,16,26,35" />
-                <Ellipse Style="{DynamicResource Black}" Margin="10,1,16,50" />
-                <Ellipse Style="{DynamicResource Black}" Margin="23,16,3,35" />
 
 
-            </Grid>
-            <Label Style="{DynamicResource A}"/>
+        <Grid Canvas.Left="308" Canvas.Top="330">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="39*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Style="{DynamicResource Card}" Margin="-1,-35,1,35.8"/>
+            <Label Style="{DynamicResource A}" Margin="-2,-35,59.133,0" Width="21" />
+            <Label Style="{DynamicResource A(R)}" Margin="77,105,-18,0" Grid.ColumnSpan="2" />
+
+            <Polygon Style="{DynamicResource Spades}" Margin="26,43,-2,-13.2" Grid.ColumnSpan="2"  />
+            <Ellipse Style="{DynamicResource Black}" Margin="14,22,36,88.8" />
+            <Ellipse Style="{DynamicResource Black}" Margin="23,10,27,100.8" />
+            <Ellipse Style="{DynamicResource Black}" Margin="36,22,14,88.8" />
+
+
+
 
 
         </Grid>
 
+        <Grid Canvas.Left="397" Canvas.Top="294" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="77*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2" Height="Auto"/>
+            <Label Style="{DynamicResource A}" Margin="0,0,55.8,0"/>
+            <Label Style="{DynamicResource A(R)}" Margin="3.2,140,-21,-27" Grid.Column="1" />
+        </Grid>
 
+
+        <StackPanel Orientation="Horizontal" Height="150" Width="400" Canvas.Left="205" Canvas.Top="-33" >
+            <Grid>
+                <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+            <Grid>
+                <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+            <Grid>
+                <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+            <Grid>
+                <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+            <Grid>
+                <Rectangle Style="{DynamicResource Card}" Margin="-3,0,3,0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+        </StackPanel>
     </Canvas>
+
+
+
 </Window>

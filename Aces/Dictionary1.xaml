@@ -32,11 +32,15 @@
 
     
 
-    <Style TargetType="Grid" x:Key="Card">
-        <Setter Property="Background" Value="White"/>
+    <Style TargetType="Rectangle" x:Key="Card">
+        <Setter Property="Fill" Value="White"/>
         <Setter Property="Width" Value="80"/>
         <Setter Property="Height" Value="140"/>
+        <Setter Property="RadiusX" Value="10"/>
+        <Setter Property="RadiusY" Value="10"/>
     </Style>
+
+    
 
     <Style TargetType="Polygon" x:Key="Spades">
         <Setter Property="Points" Value="5,15 15,5 25,15"/>
@@ -56,6 +60,18 @@
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
 
+    <Style TargetType="Label" x:Key="A(R)" BasedOn="{StaticResource A}">
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>
