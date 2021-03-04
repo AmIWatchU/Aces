@@ -19,7 +19,7 @@
 
 
             </Grid>
-            <Label Content="A" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" FontFamily="Symbol"/>
+            <Label Style="{DynamicResource A}"/>
 
 
         </Grid>

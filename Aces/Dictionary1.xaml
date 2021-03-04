@@ -48,7 +48,14 @@
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
+    </Style>
 
+    <Style TargetType="Label" x:Key="A">
+        <Setter Property="Content" Value="A"/>
+        <Setter Property="FontFamily" Value="Symbol"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
 
     </Style>
 </ResourceDictionary>
